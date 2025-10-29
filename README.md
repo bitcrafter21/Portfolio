@@ -139,8 +139,12 @@ portfolio/
 
 ### Desktop View
 ![Desktop View](link-to-screenshot)
-
-
+<img width="1920" height="1080" alt="Screenshot from 2025-10-30 00-28-15" src="https://github.com/user-attachments/assets/90e0c87f-349d-4e7c-9eff-7df3b0b7ed8b" />
+<img width="1920" height="1080" alt="Screenshot from 2025-10-30 00-28-09" src="https://github.com/user-attachments/assets/e7855bee-4a2b-4fef-b403-2de89323d8c3" />
+<img width="1920" height="1080" alt="Screenshot from 2025-10-30 00-28-04" src="https://github.com/user-attachments/assets/116d4c24-1e74-402a-90c2-5883c24fdbd5" />
+<img width="1920" height="1080" alt="Screenshot from 2025-10-30 00-27-58" src="https://github.com/user-attachments/assets/a02731b3-4766-4d8d-8946-85519e2394c9" />
+<img width="1920" height="1080" alt="Screenshot from 2025-10-30 00-27-49" src="https://github.com/user-attachments/assets/ec2322f7-29bf-40bf-a1aa-cb7165ac5d7c" />
+<img width="1920" height="1080" alt="Screenshot from 2025-10-30 00-27-24" src="https://github.com/user-attachments/assets/5cf5515c-1f23-4757-89c4-70c2b2f6bc5a" />
 
 ## 🎯 Future Enhancements
 
