@@ -291,7 +291,13 @@ portfolio/
 - ✅ Rate limiting on form submissions
 
 ## 📸 Screenshots
-
+<img width="1920" height="1080" alt="Screenshot from 2025-11-01 00-45-52" src="https://github.com/user-attachments/assets/0b854a6f-fcf2-4fb9-a879-6ebd05ed23a9" />
+<img width="1920" height="1080" alt="Screenshot from 2025-11-01 00-45-47" src="https://github.com/user-attachments/assets/8a149bb4-3c91-4c77-99f0-54f011138366" />
+<img width="1920" height="1080" alt="Screenshot from 2025-11-01 00-45-42" src="https://github.com/user-attachments/assets/5e05530d-bc85-470c-961a-103cfd7bf44c" />
+<img width="1920" height="1080" alt="Screenshot from 2025-11-01 00-45-37" src="https://github.com/user-attachments/assets/41494287-43b2-40e4-acde-92f41318063f" />
+<img width="1920" height="1080" alt="Screenshot from 2025-11-01 00-45-27" src="https://github.com/user-attachments/assets/0c4fe7c8-01f3-4c90-90c3-99cc65134a43" />
+<img width="1920" height="1080" alt="Screenshot from 2025-11-01 00-45-21" src="https://github.com/user-attachments/assets/a17fba48-f343-4a06-825c-da1618bd8358" />
+<img width="1920" height="1080" alt="Screenshot from 2025-11-01 00-45-07" src="https://github.com/user-attachments/assets/49c69d8b-e4e9-4c1e-add5-078348120265" />
 
 ## 🎯 Future Enhancements
 
