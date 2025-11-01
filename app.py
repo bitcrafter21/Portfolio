@@ -1,20 +1,7 @@
-from flask import Flask,render_template,request
-from flask_sqlalchemy import SQLAlchemy
+from flask import Flask,render_template
 import os
 
 app=Flask(__name__)
-
-#---------------------------------------Database Configuration---------------------------------------#
-app.config['SQLALCHEMY_DATABASE_URI'] = (
-    f"mysql+pymysql://{os.environ['DB_USER']}:{os.environ['DB_PASSWORD']}"
-    f"@{os.environ['DB_HOST']}/{os.environ['DB_NAME']}"
-)
-db = SQLAlchemy(app)
-class Feedback(db.Model):
-    sno = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(100), nullable=False)
-    email = db.Column(db.String(100), nullable=False)
-    feedback = db.Column(db.Text)
 
 #---------------------------------------Front Page---------------------------------------#
 @app.route('/')
@@ -49,13 +36,6 @@ def certification():
 #---------------------------------------Contact and Feedback Page---------------------------------------#
 @app.route('/contacts',methods=['GET','POST'])
 def contacts():
-    if (request.method=='POST'):
-        name=request.form.get('name')
-        email=request.form.get('email')
-        feedback=request.form.get('feedback')
-        entry=Feedback(name=name,email=email,feedback=feedback)
-        db.session.add(entry)
-        db.session.commit()
     return render_template('contacts.html')
 
 if __name__ == "__main__":
