@@ -4,15 +4,13 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
 
 ![Portfolio Preview](https://img.shields.io/badge/Status-Live-success?style=for-the-badge)
 ![Deployed on Render](https://img.shields.io/badge/Deployed%20on-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)
-![Database](https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Aiven Cloud](https://img.shields.io/badge/Cloud-Aiven-FF3E00?style=for-the-badge)
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 ## 🌐 Live Demo
 
-**Portfolio URL:** [Your Render URL Here]
+**Portfolio URL:** [https://bitcrafter21.onrender.com]
 
 ## ✨ Features
 
@@ -42,12 +40,6 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
 6. **Certifications** - Professional credentials and achievements
 7. **Contact** - Interactive feedback form with database integration
 
-### 💾 Database Integration
-- **Live MySQL Database** hosted on Aiven Cloud
-- **Feedback Form** stores submissions in real-time
-- **Secure data handling** with proper validation
-- **Cloud-based storage** for reliability and scalability
-
 ## 🛠️ Technologies Used
 
 ### Frontend
@@ -61,12 +53,9 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
   - Intersection Observer API
   - Smooth Scrolling
   - Dynamic Particle System
-  - Form Validation
 
 ### Backend & Database
-- **MySQL** - Relational database management
-- **Aiven Cloud** - Cloud database hosting
-- **API Integration** - Form data submission to database
+- **Python3** - Flask Framework - A lightweight framework for small projects
 
 ### Deployment
 - **Render** - Web hosting platform
@@ -82,21 +71,8 @@ Portfolio Architecture
 │   ├── Embedded CSS
 │   └── Embedded JavaScript
 │
-├── Backend API (Render)
-│   ├── Form submission endpoint
-│   ├── Database connection
-│   └── Data validation
-│
-└── Database (Aiven Cloud)
-    └── MySQL Database
-        └── feedback_table
-            ├── id (Primary Key)
-            ├── name
-            ├── email
-            ├── subject
-            ├── category
-            ├── message
-            └── timestamp
+├── Backend (Render)
+    ├── Python3 app.py
 ```
 
 ## 🚀 Getting Started
@@ -104,7 +80,6 @@ Portfolio Architecture
 ### Prerequisites
 - Git installed on your machine
 - Modern web browser (Chrome, Firefox, Safari, Edge)
-- (Optional) Node.js for local development server
 
 ### Local Installation
 
@@ -127,31 +102,6 @@ python -m http.server 8000
 npx serve
 ```
 
-### Database Setup (For Development)
-
-1. **Create Aiven Account**
-   - Sign up at [Aiven.io](https://aiven.io)
-   - Create a MySQL database instance
-
-2. **Database Schema**
-```sql
-CREATE TABLE feedback (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL,
-    subject VARCHAR(200) NOT NULL,
-    category VARCHAR(50),
-    message TEXT NOT NULL,
-    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
-    INDEX idx_email (email),
-    INDEX idx_timestamp (timestamp)
-);
-```
-
-3. **Update Connection Settings**
-   - Add your database credentials to the backend API
-   - Update the form submission endpoint in JavaScript
-
 ### Deployment on Render
 
 1. **Push to GitHub**
@@ -168,15 +118,6 @@ git push origin main
    - Configure build settings
    - Deploy!
 
-3. **Environment Variables**
-Set these in Render dashboard:
-```
-DB_HOST=your-aiven-host.aivencloud.com
-DB_PORT=your-port
-DB_USER=your-username
-DB_PASSWORD=your-password
-DB_NAME=your-database-name
-```
 
 ## 🎨 Customization
 
@@ -223,18 +164,6 @@ Modify the skill categories in the skills section:
 </div>
 ```
 
-### Configuring Form Submission
-Update the API endpoint in the JavaScript section:
-```javascript
-const response = await fetch('YOUR_RENDER_API_ENDPOINT/submit-feedback', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(formData)
-});
-```
-
 ## 📂 Project Structure
 
 ```
@@ -267,19 +196,6 @@ portfolio/
 - ✅ **Cloud Database** - Scalable and reliable data storage
 - ✅ **Continuous Deployment** - Auto-deploy from GitHub to Render
 - ✅ **Real-time Feedback** - Live form submissions to MySQL database
-
-## 📊 Database Schema
-
-### Feedback Table
-| Column     | Type         | Description                    |
-|------------|--------------|--------------------------------|
-| id         | INT          | Primary key, auto-increment    |
-| name       | VARCHAR(100) | User's name                    |
-| email      | VARCHAR(100) | User's email address           |
-| subject    | VARCHAR(200) | Message subject                |
-| category   | VARCHAR(50)  | Message category               |
-| message    | TEXT         | User's message content         |
-| timestamp  | DATETIME     | Submission timestamp           |
 
 ## 🔒 Security Features
 
@@ -315,7 +231,7 @@ portfolio/
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/portfolio/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/bitcrafter21/portfolio/issues).
 
 ### How to Contribute
 
@@ -341,9 +257,8 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🔗 Links
 
-- **Live Site:** [Your Render URL]
+- **Live Site:** [https://bitcrafter21.onrender.com]
 - **GitHub Repository:** [https://github.com/yourusername/portfolio](https://github.com/bitcrafter21/portfolio)
-- **Aiven Console:** [https://console.aiven.io](https://console.aiven.io)
 - **Render Dashboard:** [https://dashboard.render.com](https://dashboard.render.com)
 
 ## 💖 Show your support
@@ -354,7 +269,6 @@ Give a ⭐️ if you like this project!
 
 - Design inspiration from modern portfolio trends
 - [Render](https://render.com) for seamless deployment
-- [Aiven](https://aiven.io) for reliable cloud database hosting
 - Icons and emojis for visual enhancement
 - The open-source community for continuous learning
 - Smart India Hackathon for the opportunity to participate
@@ -376,13 +290,13 @@ If you find any bugs, please report them in the [issues section](https://github.
 
 ## 📞 Support
 
-For support, email your.email@example.com or open an issue on GitHub.
+For support, email bitcrafter21@gmail.com or open an issue on GitHub.
 
 ---
 
 **Built with 💙 by Gaurav Sharma**
 
-*Deployed on Render | Database powered by Aiven Cloud*
+*Deployed on Render*
 
 *Last Updated: November 2025*
 
@@ -392,18 +306,13 @@ For support, email your.email@example.com or open an issue on GitHub.
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/bitcrafter21/portfolio.git
 
 # Navigate to project
 cd portfolio
 
 # Install dependencies (if using backend)
 pip install -r requirements.txt
-
-# Set environment variables
-export DB_HOST=your-aiven-host
-export DB_USER=your-username
-export DB_PASSWORD=your-password
 
 # Run locally (if using backend)
 python app.py
